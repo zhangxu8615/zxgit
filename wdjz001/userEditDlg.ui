@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>userEditDlg</class>
+ <widget class="QDialog" name="userEditDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>505</width>
+    <height>171</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>161</width>
+     <height>79</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="horizontalSpacing">
+     <number>40</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>10</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_ID">
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="userID">
+      <property name="text">
+       <string>001</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_Name">
+      <property name="text">
+       <string>姓名</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="userName">
+      <property name="text">
+       <string>wdjz</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_Password">
+      <property name="text">
+       <string>密码</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="userPassword">
+      <property name="text">
+       <string>111</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>10</y>
+     <width>160</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <property name="horizontalSpacing">
+     <number>40</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>10</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_Unit">
+      <property name="text">
+       <string>科室</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="userUnit">
+      <property name="text">
+       <string>胸外</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_Class">
+      <property name="text">
+       <string>类别</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="userClass">
+      <property name="text">
+       <string>管理员</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>110</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="addUserBtn">
+      <property name="text">
+       <string>新增用户</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelBtn">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>addUserBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>userEditDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>338</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>userEditDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>userClass</sender>
+   <signal>selectionChanged()</signal>
+   <receiver>userEditDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>391</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

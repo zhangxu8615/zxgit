@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>loginDlg</class>
+ <widget class="QDialog" name="loginDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>70</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>用户名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>110</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>密  码</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="loginUserBox">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>70</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="loginPasswordEdit">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>110</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginBtn">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>200</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>登录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginExitBtn">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>200</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>loginExitBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>loginDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>363</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
